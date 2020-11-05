@@ -1,0 +1,148 @@
+html {
+  height: 100%;
+}
+
+
+body {
+  background-image: url('/img/backgr.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: 'Cabin', serif;
+  place-content: center;
+  place-items: center;
+  margin-bottom: 0;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 22em;
+  height: 3.25em;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: auto;
+  padding: 2px;
+  text-align: center;
+  margin-top: 5em;
+ }
+
+
+
+
+#weatherContainer {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+  padding: 30px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 5em;
+  text-align: center;
+  visibility: hidden;
+}
+
+#searchContainer input[type=text]:focus:not([readonly]) {
+  border: 0px;
+  outline: none;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+
+.weatherIcon {
+  align-items: center;
+  justify-content: center;
+}
+
+#weatherMain {
+  justify-content: center;
+  display: block;
+}
+
+
+#weatherMain div {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.cityHeader {
+  margin-bottom: 0px;
+}
+#todayDate,
+#temperature {
+  font-size: 20px;
+}
+
+#todayDate {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: black;
+  display:block;
+  padding: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#socialMedia div {
+  display:inline-block;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+
+#socialMedia {
+  margin-bottom: 10px;
+}
+.email,
+.github {
+  color: black;
+}
+
+
+
+@media only screen and (min-height: 1024px) {
+  .form-control {
+    width: 30em;
+    height: 4.25em;
+    font-size: large;
+  }
+  #weatherContainer {
+    margin-top: 15em;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .form-control {
+    width: 19em;
+      }
+}

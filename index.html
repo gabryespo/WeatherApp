@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's The Weather Today?</title>
+  <link rel="icon" type="image/x-icon" href="https://static.thenounproject.com/png/2378387-200.png" />  
+ 
+  <link href="https://fonts.googleapis.com/css?family=Cabin:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+</head>
+
+<body>
+  <div id="searchContainer">
+    <input class="form-control searchInput" autocomplete="off" type="text" placeholder="Worldwide City Name or USA Zipcode" aria-label="Search" id="searchInput">
+  </div>
+
+  <div id="weatherContainer">
+    <div id="weatherDescription">
+      <h1 id="cityHeader" class="cityHeader"></h1>
+      <div id="todayDate"></div>
+      <div id="temperature"></div>
+      <div id="weatherMain">
+        <div><img class="weatherIcon" id="weatherIcon"></div>
+        <div id= "weatherDescriptionHeader"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div id="socialMedia">
+      <a href="mailto:gabry_ella_@libero.it"><i class="email far fa-lg fa-envelope"></i></a>
+
+      <a href="https://github.com/gabryespo" target="_blank">
+        <i class="github fab fa-github"></i>
+      </a>
+    </div>
+
+    <div class="copyright">
+      Copyright &copy; 2020 Gabriella Esposito
+    </div>
+  </footer>
+
+  <script src="./dist/bundle.js" ></script>
+</body>
+</html>
